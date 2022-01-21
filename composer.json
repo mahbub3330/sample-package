@@ -1,0 +1,37 @@
+{
+    "name": "gglink/sample",
+    "description": "Sample - A package for user manipulation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mahbub3330",
+            "email": "m.alam3330@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gglink\\Sample\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gglink\\Sample\\SampleServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.3",
+        "ext-json": "*"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gglink\\Sample\\": "sample"
+        }
+    }
+}
